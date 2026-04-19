@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafterr Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/sections.css" />
+  </head>
+  <body>
+    <div id="appMain">
+      
+      <!-- Loading Skeletons -->
+      <div class="container" id="navSkeleton" style="padding: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div class="skeleton" style="width: 120px; height: 40px;"></div>
+          <div class="skeleton" style="width: 400px; height: 24px;"></div>
+          <div class="skeleton" style="width: 120px; height: 40px;"></div>
+        </div>
+      </div>
+      
+      <div class="container" id="heroSkeleton" style="padding: 100px 24px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 24px;">
+        <div class="skeleton" style="width: 80%; height: 60px;"></div>
+        <div class="skeleton" style="width: 60%; height: 24px;"></div>
+        <div class="skeleton" style="width: 60%; height: 24px;"></div>
+        <div class="skeleton" style="width: 200px; height: 50px; margin-top: 24px;"></div>
+      </div>
+
+      <div class="container" id="featuresSkeleton" style="padding: 80px 24px;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-bottom: 60px;">
+          <div class="skeleton" style="width: 40%; height: 40px;"></div>
+          <div class="skeleton" style="width: 80px; height: 4px;"></div>
+          <div class="skeleton" style="width: 30%; height: 20px;"></div>
+        </div>
+        <div style="display: flex; gap: 24px;">
+          <div class="skeleton" style="width: 33%; height: 350px;"></div>
+          <div class="skeleton" style="width: 33%; height: 350px;"></div>
+          <div class="skeleton" style="width: 33%; height: 350px;"></div>
+        </div>
+      </div>
+
+      <div class="container" id="solutionsSkeleton" style="padding: 80px 24px; display: none;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-bottom: 60px;">
+          <div class="skeleton" style="width: 40%; height: 40px;"></div>
+          <div class="skeleton" style="width: 80px; height: 4px;"></div>
+        </div>
+      </div>
+
+      <!-- Real App Content (Hidden Initially) -->
+      <header class="header container hidden" id="navContainer"></header>
+
+      <section id="hero" class="hero-section">
+        <div class="container hero-container hidden" id="heroContainer"></div>
+      </section>
+
+      <section id="products" class="features-section">
+        <div class="container">
+          <div class="features-header hidden" id="featuresHeader"></div>
+          <div class="features-carousel-container hidden" id="carouselContainer"></div>
+        </div>
+      </section>
+
+      <section id="solutions" class="features-section" style="background-color: var(--color-bg-main);">
+        <div class="container hidden" id="solutionsContainer"></div>
+      </section>
+
+    </div> <!-- End AppMain -->
+
+    <!-- Add New Data Modal (Hidden by default) -->
+    <div id="addDataModal" class="modal-overlay hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Create New Product</h3>
+          <button id="closeModalBtn" class="close-btn">&times;</button>
+        </div>
+        <form id="addDataForm" class="modal-form">
+          <div class="form-group">
+            <label for="productTitle">Product Title</label>
+            <input type="text" id="productTitle" placeholder="e.g. Delivery Dashboard" required>
+          </div>
+          <div class="form-group">
+            <label for="productDesc">Description</label>
+            <textarea id="productDesc" rows="3" placeholder="Brief description of the product" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="productImage">Image URL (Optional)</label>
+            <input type="url" id="productImage" placeholder="https://example.com/image.png">
+          </div>
+          <button type="submit" class="gradient-button" style="width: 100%; margin-top: 10px;">Save Product</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Application Logic -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

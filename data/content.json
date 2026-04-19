@@ -1,0 +1,68 @@
+{
+  "navigation": {
+    "logo": {
+      "src": "https://placehold.co/120x40/111827/FFFFFF?text=GRAFTERR",
+      "alt": "Grafterr Logo"
+    },
+    "links": ["Products", "Solutions"],
+    "CTA_button": "Get Started"
+  },
+  "hero": {
+    "headlinePrefix": "Your powerful ",
+    "headlineGradient": "technology provider",
+    "subheadline": "Streamline your restaurant operations, manage staff seamlessly, and accelerate your business growth—all from a single, unified platform.",
+    "CTA": "Grow Your Business",
+    "decorative_shapes": {
+      "circle": true,
+      "rectangle": true
+    }
+  },
+  "featuresSection": {
+    "title": "Built to help you ",
+    "titleAccent": "grow your business",
+    "subtitle": "Discover our suite of innovative products.",
+    "products": [
+      {
+        "id": "1",
+        "title": "Point of Sale",
+        "description": "Lightning fast, intuitive POS system perfectly tuned for any hospitality business.",
+        "image": "https://placehold.co/400x250/E5E7EB/A1A1AA?text=Point+of+Sale"
+      },
+      {
+        "id": "2",
+        "title": "Self-service",
+        "description": "Increase average order value with customized kiosk ordering experiences.",
+        "image": "https://placehold.co/400x250/E5E7EB/A1A1AA?text=Self-service"
+      },
+      {
+        "id": "3",
+        "title": "Kitchen management",
+        "description": "Connect front and back of house with clear, instant digital order ticketing.",
+        "image": "https://placehold.co/400x250/E5E7EB/A1A1AA?text=Kitchen+Management"
+      }
+    ],
+    "carousel": {
+      "mobile": 1,
+      "tablet": 2,
+      "desktop": 3,
+      "showArrows": true
+    }
+  },
+  "solutionsSection": {
+    "title": "Tailored ",
+    "titleAccent": "Solutions",
+    "subtitle": "Everything you need to run your restaurant.",
+    "cards": [
+      {
+        "title": "For Quick Service",
+        "description": "Speed up your checkout flow and minimize queue times.",
+        "icon": "🍔"
+      },
+      {
+        "title": "For Fine Dining",
+        "description": "Premium table management and custom course handling.",
+        "icon": "🍷"
+      }
+    ]
+  }
+}
